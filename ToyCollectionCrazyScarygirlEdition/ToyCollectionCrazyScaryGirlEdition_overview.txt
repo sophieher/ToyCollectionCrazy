@@ -1,0 +1,52 @@
+1. Sophia Hernandez smh3665 
+ 
+This is a toy collector app. The app has a loaded list of toys, and you can mark them with checkboxes to show 
+that they are in your collection. It has an add feature, so you can add custom toys using the
+camera and a few text boxes. 
+ 
+2. Features completed:
+About dialog with my information, and a snippet about Nathan Jurevicius, the toy designer.
+Populated list view of all vinyl toys by the designer with Name and Set information.
+Ability to mark the checkboxes on the toys to determine:
+    I Want this, I Own this, and I would like to trade/sell this.
+Separate list of toys that have been marked as "I Own This" to showcase personal collection.
+Camera feature to add custom toys. Saves to storage, and pulls up image.
+Google authentication with the Mobile Backend Starter
+- Allows for push notifications to the user
+- Will allow for future set up to have user-to-user communications
+
+3. Features not Completed:
+Images loaded into the list view.
+Ability to change the views from ListView to a Grid.
+Search for toys.
+
+4. Additional Features:
+I used the tab style action bar, which supports swipe.
+
+Known Bugs:
+Custom toy image is not persistent over orientation change when adding the image.
+ 
+5. Code from other sources:
+I used the code from the MovieRater example to populate a database, then changed it to suit my needs. 
+Found a tutorial on how to include a populated table with the apk
+(http://www.reigndesign.com/blog/using-your-own-sqlite-database-in-android-applications/)
+I also used some of the initial code for setting up the camera actions, creating a file, and 
+loading an image from a URL from their specific Android Developer pages.
+Found an image loader to load into the listview; this code is included, though not used 
+http://stackoverflow.com/questions/12513432/android-retrieve-thumbnail-by-parsing-url-as-argument-using-simplecursoradapter.
+GCMIntentService from Mobile Backend Starter sample code.
+
+ 
+6. My code chunks
+MainActivity, CustomToyActivity, ToyListActivity, and ToyView
+I moved the previous database code into each Fragment.
+One fragment is a ListFragment, while the other is a Fragment that implements a listView.
+For ToyListActivity, I implemented two fragment classes to handle the list
+population in each tab. This required moving of SimpleCursorAdapter code to the fragments
+rather than in the main activity. 
+In DBConnector, I added a SQL WHERE statement in order to differentiate between collection states for
+My Toys tab.
+Main Activity is mostly a layout with an action bar for information, and a couple of buttons.
+The Sign-in uses google account authentication, then takes you to a notification registration
+screen to opt-in to push notifications. 
+

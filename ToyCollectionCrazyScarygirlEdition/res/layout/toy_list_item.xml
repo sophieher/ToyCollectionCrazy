@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:descendantFocusability="blocksDescendants">
+    
+    <TextView
+        android:id="@+id/nameTextView"
+        style="@style/fonts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp" 
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="@string/toy_name" 
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/setTextView"
+        style="@style/fonts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/nameTextView"
+        android:layout_below="@+id/nameTextView"
+        android:text="@string/toy_set"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:focusable="false"/>
+
+    <TextView 
+        android:id="@+id/imgTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visible="false"
+        android:focusable="false" />
+    
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="toy image" 
+        android:focusable="false"/>
+
+</RelativeLayout>

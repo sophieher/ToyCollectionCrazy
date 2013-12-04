@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="image of toy" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_gradient" >
+
+            <TextView
+                android:id="@+id/nameTextView"
+                style="@style/fonts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp" 
+                android:text="@string/toy_name" />
+
+            <TextView
+                android:id="@android:id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_gradient" >
+
+            <TextView
+                android:id="@+id/setTextView"
+                style="@style/fonts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toy_set" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_gradient" >
+
+            <TextView
+                android:id="@+id/yearTextView"
+                style="@style/fonts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toy_year" />
+        </TableRow>
+    </TableLayout>
+
+    <CheckBox
+        android:id="@+id/ownedTextView"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/owned" />
+
+    <CheckBox
+        android:id="@+id/wantedTextView"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/wanted" />
+
+    <CheckBox
+        android:id="@+id/tradeTextView"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/unnecessary" />
+
+</LinearLayout>

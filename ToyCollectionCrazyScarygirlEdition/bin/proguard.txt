@@ -1,0 +1,32 @@
+# view res/layout/activity_toy_list.xml #generated:2
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.google.android.gcm.GCMBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.soph1her.toycollectioncrazyscarygirledition.CustomToyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.soph1her.toycollectioncrazyscarygirledition.GCMIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class com.soph1her.toycollectioncrazyscarygirledition.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class com.soph1her.toycollectioncrazyscarygirledition.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.soph1her.toycollectioncrazyscarygirledition.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.soph1her.toycollectioncrazyscarygirledition.ToyListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.soph1her.toycollectioncrazyscarygirledition.ToyView { <init>(...); }
+
+# onClick res/layout/toy_view.xml #generated:74
+# onClick res/layout/toy_view.xml #generated:82
+# onClick res/layout/toy_view.xml #generated:90
+-keepclassmembers class * { *** onCheckboxClicked(...); }
+
